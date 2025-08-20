@@ -1,29 +1,84 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Label</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <img src="assets/logo.png" alt="Logo du label" class="logo">
-    <h2>Bienvenue sur notre label</h2>
-  </header>
+/* Fond et texte global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000; /* fond noir */
+  color: #fff;
+  text-align: center;
+}
 
-  <main>
-    <nav class="menu">
-      <a href="label.html" class="card">Label</a>
-      <a href="events.html" class="card">Events</a>
-      <a href="agency.html" class="card">Agency</a>
-    </nav>
-  </main>
+/* Logo */
+.logo {
+  max-width: 150px;
+  margin: 20px auto 10px;
+  display: block;
+}
 
-  <div class="marquee-container">
-    <div class="marquee">
-      contact@tetevide.com contact@tetevide.com contact@tetevide.com contact@tetevide.com
-    </div>
-  </div>
-</body>
-</html>
+/* Titre plus petit */
+header h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* Menu vertical */
+.menu {
+  display: flex;
+  flex-direction: column; /* empile les liens */
+  align-items: center;
+  gap: 30px; /* espace plus large entre les cases */
+}
+
+/* Style des cartes (cases Label, Events, Agency) */
+.card {
+  width: 250px;
+  padding: 25px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;        /* plus grand */
+  font-weight: 900;      /* très gras */
+  text-transform: uppercase; /* tout en majuscules */
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #fff;
+  color: #000;
+}
+
+}
+/* Bande blanche en bas */
+.marquee-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Texte qui défile */
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  animation: marquee 15s linear infinite;
+}
+
+/* Animation défilement */
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
