@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.logo {
+  max-width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #fff;
+  color: #111;
+}
