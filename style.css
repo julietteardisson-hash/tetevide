@@ -1,48 +1,29 @@
-/* Fond et texte global */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #000; /* fond noir */
-  color: #fff;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Label</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Logo du label" class="logo">
+    <h2>Bienvenue sur notre label</h2>
+  </header>
 
-/* Logo */
-.logo {
-  max-width: 150px;
-  margin: 20px auto 10px;
-  display: block;
-}
+  <main>
+    <nav class="menu">
+      <a href="label.html" class="card">Label</a>
+      <a href="events.html" class="card">Events</a>
+      <a href="agency.html" class="card">Agency</a>
+    </nav>
+  </main>
 
-/* Titre plus petit */
-header h2 {
-  font-size: 1.2em;
-  font-weight: normal;
-  margin-bottom: 40px;
-  color: #ccc;
-}
-
-/* Menu vertical */
-.menu {
-  display: flex;
-  flex-direction: column; /* empile les liens */
-  align-items: center;
-  gap: 20px; /* espace entre chaque case */
-}
-
-/* Style des cartes (cases Label, Events, Agency) */
-.card {
-  width: 200px;
-  padding: 20px;
-  border: 2px solid #fff;
-  border-radius: 12px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5em;
-  transition: 0.3s;
-}
-
-.card:hover {
-  background: #fff;
-  color: #000;
-}
+  <div class="marquee-container">
+    <div class="marquee">
+      contact@tetevide.com contact@tetevide.com contact@tetevide.com contact@tetevide.com
+    </div>
+  </div>
+</body>
+</html>
