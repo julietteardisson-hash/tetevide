@@ -1,35 +1,48 @@
+/* Fond et texte global */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #111;
+  background: #000; /* fond noir */
   color: #fff;
   text-align: center;
 }
 
+/* Logo */
 .logo {
-  max-width: 200px;
-  margin: 20px auto;
+  max-width: 150px;
+  margin: 20px auto 10px;
   display: block;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
+/* Titre plus petit */
+header h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 40px;
+  color: #ccc;
 }
 
-.menu a {
+/* Menu vertical */
+.menu {
+  display: flex;
+  flex-direction: column; /* empile les liens */
+  align-items: center;
+  gap: 20px; /* espace entre chaque case */
+}
+
+/* Style des cartes (cases Label, Events, Agency) */
+.card {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 12px;
   color: #fff;
   text-decoration: none;
   font-size: 1.5em;
-  border: 2px solid #fff;
-  padding: 10px 20px;
-  border-radius: 10px;
   transition: 0.3s;
 }
 
-.menu a:hover {
+.card:hover {
   background: #fff;
-  color: #111;
+  color: #000;
 }
