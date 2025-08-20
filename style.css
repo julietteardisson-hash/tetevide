@@ -1,4 +1,4 @@
-/* Fond et texte global */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,14 +7,12 @@ body {
   text-align: center;
 }
 
-/* Logo */
 .logo {
   max-width: 150px;
   margin: 20px auto 10px;
   display: block;
 }
 
-/* Titre plus petit */
 header h2 {
   font-size: 1.2em;
   font-weight: normal;
@@ -22,35 +20,22 @@ header h2 {
   color: #ccc;
 }
 
-/* Menu vertical */
-.menu {
-  display: flex;
-  flex-direction: column; /* empile les liens */
-  align-items: center;
-  gap: 30px; /* espace plus large entre les cases */
-}
-
-/* Style des cartes (cases Label, Events, Agency) */
-.card {
-  width: 250px;
-  padding: 25px;
-  border: 2px solid #fff;
-  border-radius: 12px;
+.menu a {
   color: #fff;
   text-decoration: none;
-  font-size: 2em;        /* plus grand */
-  font-weight: 900;      /* très gras */
-  text-transform: uppercase; /* tout en majuscules */
+  font-size: 1.5em;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-.card:hover {
+.menu a:hover {
   background: #fff;
-  color: #000;
+  color: #111;
 }
 
 }
-/* Bande blanche en bas */
 .marquee-container {
   position: fixed;
   bottom: 0;
@@ -63,7 +48,6 @@ header h2 {
   align-items: center;
 }
 
-/* Texte qui défile */
 .marquee {
   display: inline-block;
   white-space: nowrap;
@@ -73,7 +57,7 @@ header h2 {
   animation: marquee 15s linear infinite;
 }
 
-/* Animation défilement */
+
 @keyframes marquee {
   from {
     transform: translateX(100%);
