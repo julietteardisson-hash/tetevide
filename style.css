@@ -61,7 +61,7 @@ footer {
 .marquee {
   display: inline-block;
   white-space: nowrap;
-  animation: defile 10s linear infinite;
+  animation: defile 30s linear infinite;
 }
 
 @keyframes defile {
