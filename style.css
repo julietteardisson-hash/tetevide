@@ -1,0 +1,98 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Logo et sous-titre */
+header {
+  padding: 30px 0;
+}
+
+header img {
+  max-width: 200px;  
+  filter: brightness(0) invert(1); 
+  height: auto;       
+  display: block;     
+  margin: 0 auto;  
+}
+
+header h2 {
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+/* Menu */
+nav {
+  margin-top: 30px;
+}
+
+nav a {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffff; /* couleur au survol */
+}
+
+main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.links img {
+  width: 80px;
+  filter: brightness(0) invert(1);
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.links img:hover {
+  transform: scale(1.1);
+}
+
+/* Bandeau email défilant */
+footer {
+  background: white;
+  color: black;
+  padding: 30px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: defile 30s linear infinite;
+}
+
+@keyframes defile {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
