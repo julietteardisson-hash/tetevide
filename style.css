@@ -22,7 +22,7 @@ header {
 }
 
 header img {
-  max-width: 200px;  
+  max-width: 800px;  
   filter: brightness(0) invert(1); 
   height: auto;       
   display: block;     
@@ -36,7 +36,7 @@ header h2 {
 
 /* Menu */
 nav {
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 nav a {
